@@ -1,0 +1,17 @@
+/* loader styles*/
+.preloader-wrapper.big { display: block; margin: 0 auto; }
+
+#profile-menu { display: none; }
+
+/* principal menu styles*/
+.container-profile { max-width: 296px; margin: 0 auto; }
+.container-profile nav { border-radious: 5px; }
+.container-profile nav ul .profile-item { padding: 0; }
+.container-profile nav ul .dropdown-button.active { background: #009688; color: #fff !important; }
+
+/*dropdown menu styles*/
+.dropdown-content.active { top: 65px !important; }
+.dropdown-content li:hover { border-left: solid 3px #009688; }
+.dropdown-content li a { font-size: 0.83rem !important; }
+
+/*# sourceMappingURL=profile-custom.css.map */

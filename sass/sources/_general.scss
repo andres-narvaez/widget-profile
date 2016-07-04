@@ -1,0 +1,53 @@
+
+/* loader styles*/
+
+.preloader-wrapper {
+	&.big {
+		display: block;
+		margin: 0 auto;
+	}
+}
+#profile-menu {
+	display: none;
+}
+
+
+
+
+/* principal menu styles*/
+
+.container-profile {
+	max-width: 296px;
+	margin: 0 auto;
+	nav {
+		border-radious: 5px;
+		ul {
+			.profile-item {
+				padding: 0;
+			}
+			.dropdown-button {
+				&.active {
+					background: $principal-color;
+					color: #fff !important;
+				}
+			}
+		}
+	}
+}
+
+
+/*dropdown menu styles*/
+
+.dropdown-content {
+	&.active {
+		top: 65px !important;
+	}
+	li {
+		&:hover {
+			border-left: solid 3px $principal-color;
+		}
+		a {
+			font-size: 0.83rem !important;
+		}
+	}
+}

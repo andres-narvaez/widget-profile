@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Menu profile</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/profile-custom.css">
+		<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- Preloader Script -->
+    <script type="text/javascript">
+      $(window).load(function() {
+          $('#preloader').fadeOut('slow');
+          setTimeout(function(){
+            $('#profile-menu').css({'display':'block'});
+          },1000)   
+      })
+    </script>
+	</head>
+	<body>
+
+    <!-- Master container -->
+		<div class="container-profile">  
+      
+      <!-- Menu general container --> 
+      <div>
+        <!-- Preloader container -->
+            <div id="preloader" class="preloader-wrapper big active valign">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+        <!-- Principal Menu structure container -->
+        <nav id="profile-menu">
+          <div class="nav-wrapper grey lighten-5">
+
+             <!-- Ul principal menu -->
+            <ul class="left">
+              <li class="profile-item it-1">
+                <a class="dropdown-button teal-text waves-effect" href="#!" data-activates="dropdown1">
+                  <i class="material-icons left">perm_identity</i>
+                    My Profile
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+
+              <li class="profile-item it-2">
+                <a class="teal-text" href="#">
+                  <i class="material-icons left">mode_edit</i>
+                    Eddit
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+
+
+        <!-- Dropdown menu structure container -->
+        <ul id="dropdown1" class="dropdown-content">
+          <li>
+            <a href="#">Invite Friends</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">Find Friends</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">Logout</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <!-- Javascript files -->
+    <script type="text/javascript" src="materialize/js/bin/materialize.min.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+    
+	</body>
+</html>
